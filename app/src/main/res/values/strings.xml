@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CommonMistakesCaseStudy</string>
+    <string name="show_dialog">Show fragment dialog</string>
+</resources>
