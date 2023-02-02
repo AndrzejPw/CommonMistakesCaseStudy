@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.setFragmentResult
 import com.example.commonmistakescasestudy.R
 
-class FragmentLifecycleIssuesCorrectedActivity : AppCompatActivity() {
+class FragmentLifecycleIssuesFixedActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,7 +19,7 @@ class FragmentLifecycleIssuesCorrectedActivity : AppCompatActivity() {
     }
 }
 
-class FragmentLifecycleIssuesCorrectedFragment : Fragment(R.layout.fragment_lifecycle_issues) {
+class FragmentLifecycleIssuesFixedFragment : Fragment(R.layout.fragment_lifecycle_issues) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -27,12 +27,12 @@ class FragmentLifecycleIssuesCorrectedFragment : Fragment(R.layout.fragment_life
     }
 
     private fun showDialog() {
-        CustomDialogCorrectedFragment.newInstance("dynamic message")
+        CustomDialogFixedFragment.newInstance("dynamic message")
     }
 
 }
 
-class CustomDialogCorrectedFragment : DialogFragment() {
+class CustomDialogFixedFragment : DialogFragment() {
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         return AlertDialog.Builder(activity).setTitle(requireArguments().getString("msg_arg", ""))
@@ -41,10 +41,10 @@ class CustomDialogCorrectedFragment : DialogFragment() {
     }
 
     companion object {
-        fun newInstance(message: String): CustomDialogCorrectedFragment {
+        fun newInstance(message: String): CustomDialogFixedFragment {
             val args = Bundle()
             args.putString("msg_arg", message)
-            val fragment = CustomDialogCorrectedFragment()
+            val fragment = CustomDialogFixedFragment()
             fragment.arguments = args
             return fragment
         }

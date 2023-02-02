@@ -20,6 +20,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="com.example.commonmistakescasestudy.mistake1.FragmentLifecycleIssuesFixedActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.commonmistakescasestudy.mistake2.ViewStateIssuesActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.commonmistakescasestudy.mistake2.ViewStateIssuesFixedActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
