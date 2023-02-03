@@ -22,7 +22,7 @@ class ViewStateIssuesActivity : AppCompatActivity() {
     }
 }
 
-class StateIssuesFragment : Fragment(R.layout.fragment_lifecycle_issues) {
+class StateIssuesFragment : Fragment() {
 
     private var _binding: FragmentStateIssuesBinding? = null
     private val binding get() = _binding!!
