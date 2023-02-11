@@ -33,6 +33,9 @@
         <activity
             android:name="com.example.commonmistakescasestudy.mistake3.UpdatingStateIssuesActivity"
             android:exported="true" />
+        <activity
+            android:name="com.example.commonmistakescasestudy.mistake3.UpdatingStateIssuesFixedActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

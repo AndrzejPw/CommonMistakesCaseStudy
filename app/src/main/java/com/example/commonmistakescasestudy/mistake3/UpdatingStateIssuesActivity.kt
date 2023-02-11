@@ -66,7 +66,7 @@ class UpdatingStateIssuesActivity : AppCompatActivity() {
 }
 
 @Composable
-private fun PinKeyboard(
+fun PinKeyboard(
     okButtonEnabled: Boolean,
     deleteButtonEnabled: Boolean,
     onPinButtonClicked: (Int) -> Unit,
@@ -146,6 +146,7 @@ class UpdatingStateIssuesViewModel : ViewModel() {
     private val _state =
         MutableStateFlow(State(maskedPin = "", okActive = false, deleteActive = false))
     val state = _state.asStateFlow()
+
     fun onPinButtonClicked(digit: Int) {
         pin += digit
         updateUi()
